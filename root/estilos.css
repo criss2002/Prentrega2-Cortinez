@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     background-color: whitesmoke;
 }
-
 header{
     background-color: whitesmoke;
     width: auto;
     height: 160px;
 }
-
+header i{
+    float: right;
+    padding: 30px;
+    font-size: 40px;
+}
+header #logo{
+    float: left;
+}
 .title{
     text-align: center;
     margin-top: 20px;
@@ -24,30 +28,42 @@ header{
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
 }
-
 .menu{
     float: right;
     text-transform: uppercase;
     padding: 10px;
     cursor: grab;
 }
-
+main{
+    background-image: url(img/champion_capana_1638.webp);
+    background-position: 100px;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+}
+.call{
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 3px solid black;
+    padding: 50px;
+    width: 70%;
+    height: auto;
+}
+.textotienda{
+    color: whitesmoke;
+}
 h1{
+    color: whitesmoke;
 
 }
-
 h2{
     text-align: center;
     font-family: 'Oswald', sans-serif;
     color: black;
     padding: 15px;
 }
-
 h3{
-
 }
-
-
 p{
     font-family: 'Oswald',sans-serif;
 }
@@ -61,7 +77,6 @@ p{
     padding: 80px;
     margin-bottom: 100px;
 }
-
 .item{
     height: 250px;
     border: 1px solid rgb(189, 186, 186); 
@@ -70,7 +85,6 @@ p{
     background-position: center;
     text-align: center;  
 }
-
 .item1{
     background-image: url(img/1-743.png);
 }
@@ -89,12 +103,10 @@ p{
 .item6{
     background-image: url(img/GT23H-Y07718-GUX-V1-F1.png);
 }
-
 .texto-producto{
     margin-top: 185px;
     background-color: whitesmoke;
 }
-
 .texto-producto1{
     background-color: whitesmoke;
 }
@@ -102,12 +114,10 @@ p{
     color: rgb(34, 168, 34);
     text-decoration: none;
 }
-
 .item:hover{
     border: 2px solid black;
     border-radius: 5px;
 }
-
 footer{
     text-align: center;
     font-size: 30px;
@@ -117,16 +127,12 @@ footer{
     color: whitesmoke;
     padding: 40px;
 }
-
-
-
 @media only screen and (min-width: 590px){
     .galeria{
         grid-template-columns: 3fr 3fr;
         grid-template-rows: repeat(4,200px);
     }
 }
-
 @media only screen and (min-width: 890px){
     .galeria{
         grid-template-columns: 1fr 1fr 1fr;
