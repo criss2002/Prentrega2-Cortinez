@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.galeria{
+    height: auto;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,200px);
+}
+
+.item{
+    border: 2px solid black;
+    background-size: cover;
+    background-position: center;
+}
+
+.item1{
+    background-image: url(img/1-743.png);
+}
+.item2{
+    background-image: url(img/GT19-Y07981-1IC-V1-F1-440x595.png);
+}
+.item3{
+    background-image: url(img/GT19-Y07983-2UC-V1-F1.png);
+}
+.item4{
+    background-image: url(img/GT19Y-06145J0L-V1-F2.png);
+}
+.item5{
+    background-image: url(img/GT23H-Y06794040-V1-F2.png);
+}
+.item6{
+    background-image: url(img/GT23H-Y07718-GUX-V1-F1.png);
+}
