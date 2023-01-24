@@ -10,6 +10,7 @@ h2{
     text-align: center;
     background-color: white;
     font-family: 'Oswald', sans-serif;
+    color: black;
 }
 .galeria{
     height: auto;
@@ -18,10 +19,12 @@ h2{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6,200px);
+    grid-gap: 20px;
+    padding: 20px;
 }
 
 .item{
-    border: 2px solid black;
+    border: 2px solid rgba(245, 245, 245, 0.597);
     background-size: cover;
     background-position: center;
 }
@@ -43,4 +46,17 @@ h2{
 }
 .item6{
     background-image: url(img/GT23H-Y07718-GUX-V1-F1.png);
+}
+
+@media only screen and (min-width: 480px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,200px);
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
