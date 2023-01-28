@@ -1,72 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: whitesmoke;
 }
-header{
+
+.container {
+    display: flex !important;
+    flex-wrap: wrap;
+    max-height: fit-content;
+}
+/*  HEADER  */
+header {
     background-color: whitesmoke;
     width: auto;
     height: 160px;
 }
-header i{
+
+header i ,header a{
     float: right;
     padding: 30px;
     font-size: 40px;
+    text-decoration: none;
+    color: black;
 }
-header #logo{
+
+header #logo {
     float: left;
 }
-.title{
+
+.title {
     text-align: center;
     margin-top: 20px;
-    font-size: 45px;
+    font-size: 65px;
     text-shadow: 0 0 2px black;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
 }
-.menu{
+
+.menu {
     float: right;
     text-transform: uppercase;
     padding: 10px;
     cursor: grab;
 }
-main{
+/* HEADER  */
+
+/* MAIN */
+main {
     background-image: url(img/champion_capana_1638.webp);
     background-position: 100px;
     height: 400px;
     width: 100%;
     background-size: cover;
 }
-.call{
+
+.call {
     background-color: rgba(0, 0, 0, 0.7);
     border: 3px solid black;
     padding: 50px;
     width: 70%;
     height: auto;
 }
-.textotienda{
-    color: whitesmoke;
-}
-h1{
-    color: whitesmoke;
 
+.textotienda {
+    color: whitesmoke;
 }
-h2{
+
+h1 {
+    color: whitesmoke;
+}
+
+h2 {
     text-align: center;
     font-family: 'Oswald', sans-serif;
     color: black;
     padding: 15px;
 }
-h3{
+
+p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
 }
-p{
-    font-family: 'Oswald',sans-serif;
-}
-.nright{
+
+.nright {
     background-color: rgba(0, 0, 0, 0.7);
     border: 3px solid black;
     padding: 50px;
@@ -75,71 +97,90 @@ p{
     color: whitesmoke;
     margin: 40px 40px 40px 40px;
 }
-.nosotros{
+
+.nosotros {
     background-image: url(img/streetwear.webp);
     background-size: cover;
     background-position: auto;
     height: 900px;
 }
-#btninfo{
+
+#btninfo {
     text-decoration: none;
     background-color: black;
     border: 3px solid black;
     border-radius: 3px;
     padding: 5px;
+    color: white;
 }
-.galeria{
+
+.galeria {
     height: auto;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6,300px);
+    grid-template-rows: repeat(6, 300px);
     grid-gap: 90px;
     padding: 80px;
     margin-bottom: 100px;
 }
-.item{
+
+.item {
     height: 250px;
-    border: 1px solid rgb(189, 186, 186); 
+    border: 1px solid rgb(189, 186, 186);
     box-shadow: 0 0 2px black;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
-    text-align: center;  
+    text-align: center;
 }
-.item1{
+
+.item1 {
     background-image: url(img/1-743.png);
 }
-.item2{
-    background-image: url(img/GT19-Y07981-1IC-V1-F1-440x595.png);
+
+.item2 {
+    background-image: url(img/gorra\ plana.png);
 }
-.item3{
-    background-image: url(img/GT19-Y07983-2UC-V1-F1.png);
+
+.item3 {
+    background-image: url(img/zapatilla\ af1.png);
 }
-.item4{
-    background-image: url(img/GT19Y-06145J0L-V1-F2.png);
+
+.item4 {
+    background-image: url(img/GT23H-586506-806-V1-F1-440x595.png);
 }
-.item5{
-    background-image: url(img/GT23H-Y06794040-V1-F2.png);
+
+.item5 {
+    background-image: url(img/S44455502658_V_1-1-800x800.png);
 }
-.item6{
-    background-image: url(img/GT23H-Y07718-GUX-V1-F1.png);
+
+.item6 {
+    background-image: url(img/GF70-Y08069NYC-V1-1.png);
 }
-.texto-producto{
+
+.texto-producto {
     margin-top: 185px;
     background-color: whitesmoke;
 }
-.texto-producto1{
+
+.texto-producto1 {
     background-color: whitesmoke;
 }
-#money{
+
+#money {
     color: rgb(34, 168, 34);
     text-decoration: none;
 }
-.item:hover{
+
+.item:hover {
     border: 2px solid black;
     border-radius: 5px;
 }
-footer{
+
+/* MAIN  */
+
+/* FOOTER */
+footer {
     text-align: center;
     font-size: 30px;
     background-color: black;
@@ -148,28 +189,34 @@ footer{
     color: whitesmoke;
     padding: 40px;
 }
-@media only screen and (min-width: 590px){
-    .galeria{
+
+/* FOOTER  */
+@media only screen and (min-width: 590px) {
+    .galeria {
         grid-template-columns: 3fr 3fr;
-        grid-template-rows: repeat(4,200px);
+        grid-template-rows: repeat(4, 200px);
     }
 }
-@media only screen and (min-width: 890px){
-    .galeria{
+
+@media only screen and (min-width: 890px) {
+    .galeria {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
 @media only screen and (min-width: 860px) {
     .galeria {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(1, 200px);
     }
 }
+
 @media only screen and (min-width: 1100px) {
     .galeria {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+
 @media only screen and (min-width: 1700px) {
     .galeria {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
