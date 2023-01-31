@@ -1,41 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background-color: whitesmoke;
 }
-
 .container {
     display: flex !important;
     flex-wrap: wrap;
     max-height: fit-content;
 }
-
 /* INICIO HEADER  */
 header {
     background-color: whitesmoke;
     width: auto;
     height: 160px;
 }
-
-header i,
-header a {
+header i,header a {
     float: right;
     padding: 30px;
     font-size: 40px;
     text-decoration: none;
     color: black;
 }
-
 header #logo {
     float: left;
 }
-
 .title {
     text-align: center;
     font-size: 65px;
@@ -43,30 +35,24 @@ header #logo {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
 }
-
 .menu {
     float: right;
     text-transform: uppercase;
     padding: 10px;
     cursor: grab;
 }
-
 /* FINAL HEADER  */
-
 /*INICIO MAIN */
-
 .carousel-item {
     background-size: cover;
     background-position: auto;
     height: 400px;
     width: 1080px;
 }
-
 .carousel-inner {
     background-size: cover;
     background-position: auto;
 }
-
 main {
     background-image: url(img/champion_capana_1638.webp);
     background-position: 100px;
@@ -74,7 +60,6 @@ main {
     width: 100%;
     background-size: cover;
 }
-
 .call {
     background-color: rgba(0, 0, 0, 0.7);
     border: 3px solid black;
@@ -82,30 +67,23 @@ main {
     width: 70%;
     height: auto;
 }
-
 .card {
     margin-left: 20%;
     margin-bottom: 50px;
 }
-
 .card:hover {
     border: 1px solid black;
 }
-
 .textotienda {
     color: whitesmoke;
 }
-
-.col-6 h3,
-.col-6 p {
+.col-6 h3, .col-6 p {
     text-align: center;
     margin-top: 20px;
 }
-
 h1 {
     color: whitesmoke;
 }
-
 h2 {
     text-align: center;
     font-family: 'Oswald', sans-serif;
@@ -115,12 +93,10 @@ h2 {
     margin-top: 20px;
     text-shadow: 0 0 2px black;
 }
-
 p {
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
 }
-
 .nright {
     background-color: rgba(0, 0, 0, 0.7);
     border: 3px solid black;
@@ -130,14 +106,12 @@ p {
     color: whitesmoke;
     margin: 40px 40px 40px 40px;
 }
-
 .nosotros {
     background-image: url(img/streetwear.webp);
     background-size: cover;
     background-position: auto;
     height: 900px;
 }
-
 #btninfo {
     text-decoration: none;
     background-color: black;
@@ -146,16 +120,14 @@ p {
     padding: 5px;
     color: white;
     transition: background-color 2.5s;
-    
+
 }
-#btninfo:hover{
+#btninfo:hover {
     background-color: rgba(255, 255, 255, 0.419);
 }
-#btninfo:active{
+#btninfo:active {
     height: 400px;
 }
-
-
 .galeria {
     height: auto;
     width: 100%;
@@ -166,7 +138,6 @@ p {
     padding: 80px;
     margin-bottom: 100px;
 }
-
 .item {
     height: 250px;
     border: 1px solid rgb(189, 186, 186);
@@ -175,52 +146,40 @@ p {
     background-position: center;
     text-align: center;
 }
-
 .item1 {
     background-image: url(img/1-743.png);
 }
-
 .item2 {
     background-image: url(img/gorra\ plana.png);
 }
-
 .item3 {
     background-image: url(img/zapatilla\ af1.png);
 }
-
 .item4 {
     background-image: url(img/GT23H-586506-806-V1-F1-440x595.png);
 }
-
 .item5 {
     background-image: url(img/S44455502658_V_1-1-800x800.png);
 }
-
 .item6 {
     background-image: url(img/GF70-Y08069NYC-V1-1.png);
 }
-
 .texto-producto {
     margin-top: 185px;
     background-color: whitesmoke;
 }
-
 .texto-producto1 {
     background-color: whitesmoke;
 }
-
 #money {
     color: rgb(34, 168, 34);
     text-decoration: none;
 }
-
 .item:hover {
     border: 2px solid black;
     border-radius: 5px;
 }
-
 /* FINAL MAIN  */
-
 /* INICIO FOOTER */
 footer {
     text-align: center;
@@ -231,10 +190,9 @@ footer {
     color: whitesmoke;
     padding: 40px;
 }
-footer a{
+footer a {
     color: white;
 }
-
 /* FINAL FOOTER  */
 @media only screen and (min-width: 590px) {
     .galeria {
@@ -242,26 +200,22 @@ footer a{
         grid-template-rows: repeat(4, 200px);
     }
 }
-
 @media only screen and (min-width: 890px) {
     .galeria {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
-
 @media only screen and (min-width: 860px) {
     .galeria {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(1, 200px);
     }
 }
-
 @media only screen and (min-width: 1100px) {
     .galeria {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
-
 @media only screen and (min-width: 1700px) {
     .galeria {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
