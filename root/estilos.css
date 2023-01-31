@@ -15,14 +15,16 @@ body {
     flex-wrap: wrap;
     max-height: fit-content;
 }
-/*  HEADER  */
+
+/* INICIO HEADER  */
 header {
     background-color: whitesmoke;
     width: auto;
     height: 160px;
 }
 
-header i ,header a{
+header i,
+header a {
     float: right;
     padding: 30px;
     font-size: 40px;
@@ -48,13 +50,27 @@ header #logo {
     padding: 10px;
     cursor: grab;
 }
-/* HEADER  */
 
-/* MAIN */
+/* FINAL HEADER  */
+
+/*INICIO MAIN */
+
+.carousel-item {
+    background-size: cover;
+    background-position: auto;
+    height: 400px;
+    width: 1080px;
+}
+
+.carousel-inner {
+    background-size: cover;
+    background-position: auto;
+}
+
 main {
     background-image: url(img/champion_capana_1638.webp);
     background-position: 100px;
-    height: 400px;
+    height: 550px;
     width: 100%;
     background-size: cover;
 }
@@ -67,18 +83,21 @@ main {
     height: auto;
 }
 
-.card{
+.card {
     margin-left: 20%;
     margin-bottom: 50px;
 }
-.card:hover{
+
+.card:hover {
     border: 1px solid black;
 }
 
 .textotienda {
     color: whitesmoke;
 }
-.col-6 h3, .col-6 p{
+
+.col-6 h3,
+.col-6 p {
     text-align: center;
     margin-top: 20px;
 }
@@ -122,11 +141,20 @@ p {
 #btninfo {
     text-decoration: none;
     background-color: black;
-    border: 3px solid black;
+    border: 3px solid rgba(255, 255, 255, 0.419);
     border-radius: 3px;
     padding: 5px;
     color: white;
+    transition: background-color 2.5s;
+    
 }
+#btninfo:hover{
+    background-color: rgba(255, 255, 255, 0.419);
+}
+#btninfo:active{
+    height: 400px;
+}
+
 
 .galeria {
     height: auto;
@@ -191,9 +219,9 @@ p {
     border-radius: 5px;
 }
 
-/* MAIN  */
+/* FINAL MAIN  */
 
-/* FOOTER */
+/* INICIO FOOTER */
 footer {
     text-align: center;
     font-size: 30px;
@@ -203,8 +231,11 @@ footer {
     color: whitesmoke;
     padding: 40px;
 }
+footer a{
+    color: white;
+}
 
-/* FOOTER  */
+/* FINAL FOOTER  */
 @media only screen and (min-width: 590px) {
     .galeria {
         grid-template-columns: 3fr 3fr;
